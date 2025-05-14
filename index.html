@@ -22,6 +22,38 @@
                 <a href="#" class="sponsor_question">후원관련 자주 묻는 질문 보기</a>
             </div>
         </section>
+        <!-- 2행 퀴즈 -->
+        <section class="quiz">
+            <div class="container">
+                <form action="#" method="get" id="left_quiz">
+                    <h2>Quiz</h2>
+                    <p>20년 사이 북극 빙하 면적은 몇 % 감소했을까요?</p>
+                    <div class="quiz_list">
+                        <label><!-- 클릭되는 곳과 글자가 한 줄에 있어야하는데 따로 있게 되면 다른 줄에 들어가는거니까 label이라는 그룹으로 묶어주는 것 -->
+                            <input type="radio" name="answer" value="thirty">
+                            <span>30%</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="answer" value="fourty">
+                            <span>40%</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="answer" value="fifty">
+                            <span>50%</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="answer" value="sixty">
+                            <span>60%</span>
+                        </label>
+                    </div>
+                    <button type="button" id="answer_btn">정답 확인 하기</button>
+                </form>
+                <div class="right">
+                    <p><img src="./images/quiz_contents.png" alt="현재까지 5529명이 퀴즈에 참여하였습니다."></p>
+                    <p>*퀴즈 참여 현황은 매주 업데이트 됩니다</p>
+                </div>
+            </div>
+        </section>
     </div><!-- e:#wrap -->
 </body>
 </html>
