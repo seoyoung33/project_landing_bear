@@ -62,7 +62,6 @@ body * {transition:all 0.3s;}
 #wrap .quiz .container {
     max-width:1250px;
     min-width:320px;
-    border:1px solid red;
     margin:0 auto; display:grid; /* 왼쪽퀴즈, 오른쪽 참여현황 정렬 grid */
     grid-template-columns:1fr 1fr;
 }
@@ -119,7 +118,6 @@ body * {transition:all 0.3s;}
     padding:200px 0;
 }
 #wrap .ad .container {
-    border:5px solid lime;
     max-width:1250px;
     min-width:320px;
     text-align:center;
