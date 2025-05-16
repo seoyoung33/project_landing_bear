@@ -14,21 +14,48 @@
     #wrap .ad {padding:200px 80px;}
     #wrap .ad .container h2 {font-size:2.5rem;}
     #wrap .ad .container .sponsor_btn {line-height:62px; width:270px; font-size:1.375rem;}
+    /* ===========================4행 빙하면적감소 */
+    #wrap .reduction {padding:200px 80px;}
+    #wrap .reduction .container h2 {font-size:2.5rem;}
+    #wrap .reduction .container h2 mark {font-size:2.5rem;}
+    #wrap .reduction .container p {font-size:1.375rem; margin:40px 0;}
+
+    /* ===========================5행 인류재앙 */
+    #wrap .disaster {padding:200px 80px;}
+    #wrap .disaster .container h2 {font-size:2.5rem;}
+    #wrap .disaster .container p {font-size:1rem;}
+    #wrap .disaster .container .list li .bg p {font-size:1rem;}
+    #wrap .disaster .container .list li > p {font-size:1rem;}
     }
-    /* mobile 849 ~ 320 */
-    @media screen and (max-width:849px) {
-        /* ===========================1행 intro */
-        #wrap .intro {padding:0 15px;}/* 부모와 자식사이! */
-        #wrap .intro .container h1:nth-child(1) a img {width:40px;}
-        #wrap .intro .container h1:nth-child(2) {font-size:1.875rem;}
-        #wrap .intro .container .sponsor_btn {width:270px;}
-        /* ===========================2행 quiz */
-        #wrap .quiz {padding:70px 15px;}
-        #wrap .quiz .container {grid-template-columns:1fr;}
-        #wrap .quiz .container .right {margin-top:50px; text-align:center;}
-        #wrap .quiz .container .right p:nth-child(1) img {width:80%;}
-        /* ===========================3행 새끼북극곰 이야기 */
-        #wrap .ad {padding:50px 15px;}
-        #wrap .ad .container h2 {font-size:1.375rem;}
-        #wrap .ad .container iframe {height:400px;}
+/* mobile 849 ~ 320 */
+@media screen and (max-width:849px) {
+    /* ===========================1행 intro */
+    #wrap .intro {padding:0 15px;}/* 부모와 자식사이! */
+    #wrap .intro .container h1:nth-child(1) a img {width:40px;}
+    #wrap .intro .container h1:nth-child(2) {font-size:1.875rem;}
+    #wrap .intro .container .sponsor_btn {width:270px;}
+    /* ===========================2행 quiz */
+    #wrap .quiz {padding:70px 15px;}
+    #wrap .quiz .container {grid-template-columns:1fr;}
+    #wrap .quiz .container .right {margin-top:50px; text-align:center;}
+    #wrap .quiz .container .right p:nth-child(1) img {width:80%;}
+    /* ===========================3행 새끼북극곰 이야기 */
+    #wrap .ad {padding:50px 15px;}
+    #wrap .ad .container h2 {font-size:1.375rem;}
+    #wrap .ad .container iframe {height:400px;}
+    /* ===========================4행 빙하면적감소 */
+    #wrap .reduction {padding:70px 15px;}
+    #wrap .reduction .container h2 {font-size:1.375rem;}
+    #wrap .reduction .container h2 mark {font-size:1.375rem;}
+    #wrap .reduction .container p {font-size:0.813rem; margin:22px 0;}
+    #wrap .reduction .container p:nth-of-type(2) img {transform:scale(2);}
+    /* ===========================5행 인류재앙 */
+    #wrap .disaster {padding:70px 15px;}
+    #wrap .disaster .container h2 {font-size:1.375rem;}
+    #wrap .disaster .container p {font-size:0.813rem;}
+    #wrap .disaster .container .list {flex-flow:column nowrap;}
+    #wrap .disaster .container .list li .bg {height:150px;}
+    #wrap .disaster .container .list li .bg h3 {font-size:1.375rem; }
+    #wrap .disaster .container .list li .bg p {font-size:0.813rem;}
+    #wrap .disaster .container .list li > p {font-size:0.813rem; height:max-content;}
     }

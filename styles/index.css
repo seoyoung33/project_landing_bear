@@ -1,6 +1,6 @@
 /* index.css */
 /* 반응형 CSS속성 변경 시 애니메이션 적용 속성 */
-body * {transition:all 0.3s;}
+body * {transition:all 0.5s;}
 /* 1행 =================================== 북극곰 후원 안내 */
 #wrap {} /* 기본값 유지를 위해 작성하지 않음. 너비는 부모의 100%, 높이는 내용만큼 */
 #wrap .intro {
@@ -141,7 +141,101 @@ body * {transition:all 0.3s;}
     font-size:2.125rem; font-weight:700;
 }
 /* 4행 =================================== 빙하면적감소 */
+#wrap .reduction {
+    background:url(../images/50_bg.png) no-repeat center / cover;
+    padding:200px 0;
+}
+#wrap .reduction .container {
+    max-width:1250px;
+    min-width:320px;
+    margin:0 auto;
+}
+#wrap .reduction .container h2 {
+    font-size:3.438rem; color:#fff;
+    font-weight:500; letter-spacing:-0.01;
+    line-height:1.2; 
+}
+#wrap .reduction .container h2 mark {
+    font-size:3.438rem; color:#050505;
+    font-weight:500; display:inline-block;
+    line-height:1.2; 
+}
+#wrap .reduction .container p {
+    font-size:2.125rem; font-weight:700;
+    margin:81px 0; color:#fff;
+    line-height:1.2; 
+}
+#wrap .reduction .container p img {}
+#wrap .reduction .container p:nth-of-type(2) {
+    max-width:1250px; overflow:hidden;
+}
+#wrap .reduction .container p:nth-of-type(2) img {width:100%;}
 /* 5행 =================================== 인류재앙 */
+#wrap .disaster {
+    background-color:#f5f5f5;
+    padding:200px 0; 
+}
+#wrap .disaster .container {
+    max-width:1250px;
+    min-width:320px;
+    /* 최소 320 ~ 최대 1250 사이 너비값은 가변형 세팅 */
+    /* (위) 큰 범위값 세팅 후 @media 규칙내에서 태블릿, 모바일에 맞는 레이아웃 재수정하며 반응형 제작 */
+    margin:0 auto;
+    text-align: center;
+}
+#wrap .disaster .container h2 {
+    font-size:3.438rem; font-weight:500;
+}
+#wrap .disaster .container > p {
+    margin:55px 0; font-size:1.25rem;
+}
+#wrap .disaster .container .list {
+    display:flex; gap:20px;
+}
+#wrap .disaster .container .list li {
+    background-color:#fff;
+    flex:1;
+}
+#wrap .disaster .container .list li .bg * {
+    color:#fff; position:relative; z-index:15;
+    /* z-index쓰려면 position 필수!! */
+}
+#wrap .disaster .container .list li .bg {
+    height:320px;
+    background-size:cover;
+    background-position:center;
+    padding:48px 0;
+    position:relative;
+}
+#wrap .disaster .container .list li .bg::before {
+    content:''; display:block;
+    position:absolute; left:0; top:0; width:100%; height:100%;
+    /* (위) content~height속성까지 before 또는 after 가상요소 사용 시 필수 속성 모음 */
+    background:linear-gradient(rgba(0,0,0,1) 19%,rgba(0,0,0,0) 55%);
+    z-index:10;
+}
+#wrap .disaster .container .list li .bg h3 {
+    font-size:2.688rem; font-weight:700;
+    margin-bottom:11px;
+}
+#wrap .disaster .container .list li .bg p {
+    line-height:1.7; font-size:1.25rem;
+}
+#wrap .disaster .container .list li > p {
+    height:250px;
+    padding:20px;
+    line-height:1.7; font-size:1.25rem;
+}
+/* 5행 ============ 각 개별 배경 선택자 */
+#wrap .disaster .container .list li .bg1 {
+    background-image:url(../images/28.png);
+}
+#wrap .disaster .container .list li .bg2 {
+    background-image:url(../images/27.png);
+}
+#wrap .disaster .container .list li .bg3 {
+    background-image:url(../images/wwf.jpg);
+}
 /* 6행 =================================== 지구위기 */
 /* 7행 =================================== WWF단체홍보 */
 /* 8행 =================================== 다양한활동 */
